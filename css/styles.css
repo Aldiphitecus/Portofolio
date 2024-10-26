@@ -1,17 +1,18 @@
 :root {
-    --gradient : linear-gradient(90deg, rgba(21,19,63,1) 0%, rgba(57,57,136,1) 43%, rgba(45,101,112,1) 82%);
+    --gradient: linear-gradient(90deg, rgba(21, 19, 63, 1) 0%, rgba(57, 57, 136, 1) 43%, rgba(45, 101, 112, 1) 82%);
 }
 
 body {
-    background-image: var(--gradient) ;
+    background-image: var(--gradient);
     background-size: 300%;
     animation: gradient-animation 5s infinite alternate;
 }
 
 @keyframes gradient-animation {
-    0%{
+    0% {
         background-position: left;
     }
+
     100% {
         background-position: right;
     }
@@ -25,11 +26,11 @@ body {
 nav {
     position: fixed;
     top: 0px;
-    background-color: #052c65 ;
+    background-color: #052c65;
     opacity: 80%;
     z-index: 1000;
     width: 100%;
-    animation: nav-animation 1s;
+    /* animation: nav-animation 1s; */
 }
 
 .navbar-brand {
@@ -44,6 +45,7 @@ nav {
     0% {
         height: 0px;
     }
+
     100% {
         height: 70px;
     }
@@ -55,7 +57,7 @@ nav {
 }
 
 
-.navbar-nav a{
+.navbar-nav a {
     color: white;
     font-size: 15px;
     animation: nav-a 3s ease;
@@ -66,6 +68,7 @@ nav {
     0% {
         opacity: 0%;
     }
+
     100% {
         opacity: 100%;
     }
@@ -93,6 +96,7 @@ nav {
     padding-left: 80px;
     padding-right: 80px;
 }
+
 .content1 p {
     text-align: justify;
     margin-top: 10px;
@@ -129,5 +133,5 @@ hr {
 }
 
 .foto-profil {
-    border-radius: 12px ;
+    border-radius: 12px;
 }
